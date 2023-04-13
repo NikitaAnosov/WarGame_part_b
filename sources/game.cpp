@@ -153,6 +153,7 @@ void Game::newDeckOfCards()
     }
 
     // shuffle with random
+    // the shuffle info I got from research from the internet sites like stackoverflow/geeksforgeeks
     random_device randomCard;   // generates non deterministic random numbers
     mt19937 rand(randomCard()); // pseudorandom number generator
     shuffle(this->_stackGame.begin(), this->_stackGame.end(), rand);
